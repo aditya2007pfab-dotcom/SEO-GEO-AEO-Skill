@@ -29,7 +29,7 @@ This tool is distributed as a ZIP archive for use in **Claude's Cowork desktop a
 2. Open the Claude desktop app or website
 3. Navigate to Customize
 4. Go to **Skills** and click the **+** icon
-5. Upload the ZIP here and it should install the SKill for you
+5. Upload the ZIP here and it should install the Skill for you
 
 No unzipping required. The skill will be active for that session and any subsequent sessions where you provide the ZIP.
 
