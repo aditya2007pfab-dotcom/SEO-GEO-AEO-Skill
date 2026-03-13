@@ -23,14 +23,14 @@ Claude will ask whether you want a **Quick Audit** (top issues and scores) or a 
 
 ## Installation
 
-This tool is distributed as a Cowork Skill (`.skill` file) for use in **Claude's Cowork desktop app**.
+This tool is distributed as a ZIP archive for use in **Claude's Cowork desktop app**.
 
-1. Download `seo-geo-aeo.skill` from this repository
-2. Open the Claude desktop app
-3. Go to **Settings → Skills** and click **Install Skill**
-4. Select the downloaded `.skill` file
+1. Download the ZIP from this repository (click **Code → Download ZIP** on GitHub)
+2. Open the Claude desktop app and start a new Cowork session
+3. Upload the ZIP directly — drag it into the chat or use the attachment button
+4. Claude will detect and load the skill automatically
 
-The skill will then be available in all your Cowork sessions.
+No unzipping required. The skill will be active for that session and any subsequent sessions where you provide the ZIP.
 
 ---
 
@@ -38,7 +38,7 @@ The skill will then be available in all your Cowork sessions.
 
 ```
 SEO-GEO-AEO-Skill/
-├── seo-geo-aeo.skill    ← Install this in the Claude desktop app
+├── seo-geo-aeo.skill    ← Skill bundle
 ├── SKILL.md             ← Audit instructions (source of truth)
 └── README.md
 ```
