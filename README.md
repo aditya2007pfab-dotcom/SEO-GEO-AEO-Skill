@@ -1,4 +1,4 @@
-# SEO / GEO / AEO Audit — Plugin & Skill for Claude
+# SEO / GEO / AEO Audit — Skill for Claude
 
 Automatically audits any website across three dimensions of modern search visibility:
 
@@ -17,17 +17,13 @@ Once installed, just give Claude a URL and ask about search performance:
 > "Audit this URL for AI search readiness: example.com"
 > "Run a full SEO, GEO, and AEO audit on my website"
 
-Claude will ask whether you want a **Quick Audit** (top issues and scores) or a **Full Audit** (comprehensive breakdown), then crawl the site across multiple pages before delivering a structured report.
+Claude will ask whether you want a **Quick Audit** (top issues and scores) or a **Full Audit** (comprehensive breakdown), then crawl the site across multiple pages before delivering a structured report with a downloadable Word doc and PDF.
 
 ---
 
-## Installation options
+## Installation
 
-This tool is available in two formats — use whichever fits your setup.
-
-### Option A: Cowork Skill (`.skill` file)
-
-For use in **Claude's Cowork desktop app**. Install the skill file directly:
+This tool is distributed as a Cowork Skill (`.skill` file) for use in **Claude's Cowork desktop app**.
 
 1. Download `seo-geo-aeo.skill` from this repository
 2. Open the Claude desktop app
@@ -38,37 +34,12 @@ The skill will then be available in all your Cowork sessions.
 
 ---
 
-### Option B: Claude Code Plugin
-
-For use in **Claude Code** (the terminal-based CLI tool).
-
-**Option B1 — from a marketplace (once listed):**
-```
-claude plugin install seo-geo-aeo
-```
-
-**Option B2 — from this directory:**
-```
-claude --plugin-dir ./seo-geo-aeo-plugin
-```
-
-**Option B3 — install to project scope (share with your team):**
-```
-claude plugin install seo-geo-aeo --scope project
-```
-
----
-
 ## Repository structure
 
 ```
-SEO-GEO-AEO-Plugin-main/
-├── seo-geo-aeo.skill           ← Standalone Cowork skill (install this for Cowork)
-├── skills/
-│   └── seo-geo-aeo/
-│       └── SKILL.md            ← Audit instructions (source of truth)
-├── .claude-plugin/
-│   └── plugin.json             ← Claude Code plugin manifest
+SEO-GEO-AEO-Skill/
+├── seo-geo-aeo.skill    ← Install this in the Claude desktop app
+├── SKILL.md             ← Audit instructions (source of truth)
 └── README.md
 ```
 
@@ -78,6 +49,6 @@ SEO-GEO-AEO-Plugin-main/
 
 **1.0.0** — Initial release
 - Quick and Full audit modes
-- Multi-page site crawl (up to 15 pages)
+- Multi-page site crawl (up to 15 pages for Quick, unlimited for Full)
 - SEO, GEO, and AEO scoring with priority recommendations matrix
-- Available as both a Cowork `.skill` file and a Claude Code plugin
+- Downloadable audit report as both Word (.docx) and PDF
