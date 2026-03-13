@@ -39,7 +39,6 @@ No unzipping required. The skill will be active for that session and any subsequ
 
 ```
 SEO-GEO-AEO-Skill/
-├── seo-geo-aeo.skill    ← Skill bundle
 ├── SKILL.md             ← Audit instructions (source of truth)
 └── README.md
 ```
