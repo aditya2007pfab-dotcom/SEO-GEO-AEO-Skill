@@ -26,9 +26,10 @@ Claude will ask whether you want a **Quick Audit** (top issues and scores) or a 
 This tool is distributed as a ZIP archive for use in **Claude's Cowork desktop app**.
 
 1. Download the ZIP from this repository (click **Code → Download ZIP** on GitHub)
-2. Open the Claude desktop app and start a new Cowork session
-3. Upload the ZIP directly — drag it into the chat or use the attachment button
-4. Claude will detect and load the skill automatically
+2. Open the Claude desktop app or website
+3. Navigate to Customize
+4. Go to **Skills** and click the **+** icon
+5. Upload the ZIP here and it should install the SKill for you
 
 No unzipping required. The skill will be active for that session and any subsequent sessions where you provide the ZIP.
 
