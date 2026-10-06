@@ -1,54 +1,51 @@
 # SEO / GEO / AEO Audit — Skill for Claude
 
-Automatically audits any website across three dimensions of modern search visibility:
-
-- **SEO** — Traditional search engine optimization (Google, Bing): title tags, meta descriptions, heading structure, schema markup, internal links, content quality
-- **GEO** — Generative Engine Optimization for AI-powered search (Perplexity, ChatGPT Search, Google AI Overviews, Gemini): E-E-A-T signals, entity clarity, factual density, author authority
-- **AEO** — Answer Engine Optimization for featured snippets and voice search: FAQ schema, HowTo schema, question-phrased headings, direct answer formatting
+An open-source custom Skill for **Claude (Cowork Desktop & Web)** designed to perform comprehensive, automated website audits across traditional search, generative AI search engines, and answer engines.
 
 ---
 
-## How to use
+## 📌 Core Capabilities
 
-Once installed, just give Claude a URL and ask about search performance:
-
-> "Can you audit burningstickcreative.com for SEO?"
-> "Check my site example.com — why isn't it ranking?"
-> "Audit this URL for AI search readiness: example.com"
-> "Run a full SEO, GEO, and AEO audit on my website"
-
-Claude will ask whether you want a **Quick Audit** (top issues and scores) or a **Full Audit** (comprehensive breakdown), then crawl the site across multiple pages before delivering a structured report with a downloadable Word doc and PDF.
+| Optimization Dimension | Focus Areas | Target Engines & Models |
+| :--- | :--- | :--- |
+| **SEO** (Search Engine Optimization) | Title tags, meta descriptions, H1–H6 header taxonomy, Schema.org JSON-LD, internal linking architecture, technical crawlability, content quality | Google, Bing, DuckDuckGo |
+| **GEO** (Generative Engine Optimization) | E-E-A-T signals (Experience, Expertise, Authoritativeness, Trustworthiness), entity clarity, factual density, citation readiness, author & brand authority | Perplexity AI, ChatGPT Search, Google AI Overviews, Gemini, Copilot |
+| **AEO** (Answer Engine Optimization) | FAQ schema, HowTo schema, question-phrased headings, direct-answer formatting, voice search positioning | Siri, Google Assistant, Featured Snippets (Position Zero) |
 
 ---
 
-## Installation
+## 🚀 How to Use
 
-This tool is distributed as a ZIP archive for use in **Claude's Cowork desktop app**.
+Once installed, invoke the audit using natural language queries in Claude:
 
-1. Download the ZIP from this repository (click **Code → Download ZIP** on GitHub)
-2. Open the Claude desktop app or website
-3. Navigate to Customize
-4. Go to **Skills** and click the **+** icon
-5. Upload the ZIP here and it should install the Skill for you
+> *"Can you audit burningstickcreative.com for SEO?"*  
+> *"Check my site example.com — why isn't it ranking?"*  
+> *"Audit this URL for AI search readiness and Perplexity rankings: example.com"*  
+> *"Run a full SEO, GEO, and AEO audit on my website"*  
 
-No unzipping required. The skill will be active for that session and any subsequent sessions where you provide the ZIP.
+### Audit Modes
+* **Quick Audit:** Scans top priority pages (up to 15 URLs), generating immediate visibility scores, critical technical errors, and quick wins.
+* **Full Audit:** Performs a complete domain crawl with detailed breakdowns for SEO, GEO, and AEO metrics, a prioritized recommendation matrix, and downloadable reports in `.docx` and `.pdf` formats.
 
 ---
 
-## Repository structure
+## 🛠️ Installation Guide
 
-```
+This tool is distributed as a ZIP archive for use in **Claude's Cowork desktop app** or website.
+
+1. Download the ZIP archive from this repository (click **Code → Download ZIP** on GitHub).
+2. Open the Claude desktop app or web interface.
+3. Navigate to **Customize**.
+4. Go to **Skills** and click the **+** icon.
+5. Upload the downloaded ZIP file directly (no unzipping required).
+
+*Note: The skill will remain active for your current session and any subsequent sessions where the ZIP is provided.*
+
+---
+
+## 📂 Repository Structure
+
+```text
 SEO-GEO-AEO-Skill/
-├── SKILL.md             ← Audit instructions (source of truth)
-└── README.md
-```
-
----
-
-## Version history
-
-**1.0.0** — Initial release
-- Quick and Full audit modes
-- Multi-page site crawl (up to 15 pages for Quick, unlimited for Full)
-- SEO, GEO, and AEO scoring with priority recommendations matrix
-- Downloadable audit report as both Word (.docx) and PDF
+├── SKILL.md             ← Comprehensive audit instructions, scoring criteria, and prompt logic
+└── README.md            ← Project overview, installation steps, and capability guide
